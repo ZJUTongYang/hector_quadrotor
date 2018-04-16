@@ -273,13 +273,13 @@ private:
   void updatePoseCommand(const geometry_msgs::PoseStamped &new_pose)
   {
     // TODO TF to world frame
-    if (new_pose.header.frame_id != world_frame_) {
-      ROS_WARN_STREAM_THROTTLE_NAMED(1.0, "position_controller", "Pose commands must be given in the " << world_frame_ << " frame, ignoring command");
-    }
-    else
-    {
+//    if (new_pose.header.frame_id != world_frame_) {
+//      ROS_WARN_STREAM_THROTTLE_NAMED(1.0, "position_controller", "Pose commands must be given in the " << world_frame_ << " frame, ignoring command");
+//    }
+//    else
+//    {
       updatePoseCommand(new_pose.pose);
-    }
+//    }
   }
 
   void updatePoseCommand(const geometry_msgs::Pose &new_pose)
