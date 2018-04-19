@@ -4,3 +4,5 @@ hector_quadrotor contains packages related to modeling, control and simulation o
 sudo apt-get install ros-kinetic-hector-gazebo-plugins<br>
 sudo apt-get install ros-kinetic-hector-pose-estimation<br>
 sudo apt-get install ros-kinetic-hardware-interface<br>
+sudo apt-get install ros-kinetic-controller-interface<br>
+sudo apt-get install ros-kinetic-gazebo-ros-control<br>
